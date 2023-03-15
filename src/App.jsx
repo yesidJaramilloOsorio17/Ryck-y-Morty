@@ -12,7 +12,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get(`https://rickandmortyapi.com/api/location/${2}`)
+      .get(`https://rickandmortyapi.com/api/location/${1}`)
       .then((resp) => setCharacterData(resp.data))
       
       .catch((error) => console.error(error));
@@ -35,15 +35,20 @@ function App() {
 
 
   return (
-
+   
     <form onSubmit={e =>handleSubmit (e)} >
- <div className='buscador'>
+     
+         <div className='buscador'>
            <label htmlFor="id" className="get1"></label> <br />
-           <input id='casilla' value={ value } type="text" placeholder='type a location id' onChange={ (e) => setValue( e.target.value)}  />
+           <input id='casilla' value={ value } type="text" placeholder='type a location id, 1 a126' onChange={ (e) => setValue( e.target.value)}  />
            <button type='submit'className='get' >
            Search
             </button>
            </div>
+
+
+ 
+
 <>
     <div className="App">
       <Character
