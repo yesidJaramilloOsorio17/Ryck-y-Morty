@@ -10,6 +10,8 @@
 :root{
   background-image: url(/public/bg2.png);
   background-size: auto;
+  display: grid;
+ 
 }
 
 .character-card{
@@ -21,7 +23,7 @@
   
 }
 .description{
-  margin: 2rem;
+  margin: 1rem;
 }
 
 
@@ -29,7 +31,7 @@
 .character-card1{
   
   display: grid;
-  text-align: center;
+  
  place-content: center;
   grid-template-columns: auto auto  ;
  
