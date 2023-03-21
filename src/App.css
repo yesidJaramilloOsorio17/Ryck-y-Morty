@@ -47,7 +47,7 @@ body{
   display: grid;
   
  place-content: center;
-  grid-template-columns: auto auto  auto;
+  grid-template-columns: auto auto  auto auto ;
 
 
 }
@@ -115,3 +115,26 @@ body{
   
   color: #893446;
 }
+
+@media (max-width: 768px) {
+  .character-card1{
+  
+    display: grid;
+    
+   place-content: center;
+    grid-template-columns: auto auto auto;
+  
+  
+  }
+}  
+@media (max-width: 400px) {
+  .character-card1{
+  
+    display: grid;
+    
+   place-content: center;
+    grid-template-columns: auto  ;
+  
+  
+  }
+}  
